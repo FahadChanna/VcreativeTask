@@ -1,0 +1,569 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+#main{
+	width: 100%;
+}
+#nav{
+	width: 100%;
+	height: 270px;
+	background-color: #5578bd;;
+}
+#img{
+	display: flex;
+	justify-content: space-between;
+}
+#img #svg{
+	width: 275px;
+	height: 56px;
+	margin-left: 20px;
+}
+#i{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+#i i{
+	font-size: 25px;
+	
+}
+#h5{
+	display: flex;
+	align-items: center;
+	width: 18%;
+	height: 55%;
+	border-radius: 50%;
+	background-color: white;
+}
+#i h4{
+	font-size: 16px;
+	border-radius: 50%;
+	margin-right: 120px;
+	font-weight: lighter;
+}
+
+#main-header{
+	padding-top: 14px;
+}
+
+#main-header .main-section{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 70%;
+	background-color: white;
+	border-radius: 10px;
+	height: 100px;
+	margin: 10px 280px;
+}
+#main-header .main-section .header-block{
+	flex-basis: 18%;
+	padding: 0 20px;
+	border-right: 1px solid #eff0f6;
+
+}
+#main-header .main-section .header-block .actions{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	gap: 10px;
+}
+
+.header-block .actions .action-icons i{
+	padding: 6px;
+    border-radius: 6px;
+	font-size: 21px;
+}
+
+.header-block .actions .action-numbers h3{
+	font-size: 30px;
+}
+
+.action-name p{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.container{
+	display: flex;
+	gap: 20px;
+	max-width: 85%;
+	margin: -60px auto;
+}
+.container .box{
+	flex-basis: 35%;
+	border-radius: 5px;
+	border: solid 0.5px #eff0f6;
+	border-color: #fff;
+	position: relative;
+	background-color: #fff;
+	height: 80%;
+}
+.container .headerDropDown{
+	padding: 4.5px 14.5px 4.5px 13px;
+}
+.container .box .headerDropDown .dropdown select{
+	font-size: 14px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    padding: 8px 8px 8px 0;
+}
+.container .box .headerDropDown .dropdown select option{
+	font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.container .box .headerDropDown .searchBox{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+}
+.container .box .headerDropDown .searchBox input{
+	width: 350px;
+	height: 35px;
+	padding-left: 30px;
+	border-radius: 3px;
+	border: none;
+	font-size: 13px;
+	font-weight: 600;
+	outline: none;
+	background-color: #f0f2f5;
+	background-size: 13px;
+	background-position: 2% 49%;
+	background-repeat: no-repeat;
+}
+.container .box .headerDropDown .searchBox .filtericon{
+	padding: 5px 5px 0 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+}
+.filterDetail{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 186px;
+	z-index: 2;
+	top: 95px;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 1px 5px #525f7126;
+	border: solid 0.5px #ebebeb;
+}
+.filterDetailsInner{
+	padding: 5px 15px;
+}
+.filterTitle{
+	margin: 4px;
+}
+.filterRow{
+	width: 100%;
+}
+.filterContainer{
+	display: flex;
+	gap: 8px;
+	padding-bottom: 3.5rem;
+}
+.filters select{
+	padding: 10px 33px 10px 11px;
+	border-radius: 4px;
+	border: 0.5px solid #c4cbce;
+	appearance: none;
+	background-image: url(https://vcreative-task.vercel.app/arrow-down.119d49776fa69ada.svg);
+	background-repeat: no-repeat;
+	background-position: 91% 55%;
+}
+.buttons{
+	text-align: right;
+}
+.buttons .clearAll{
+	width: 88px;
+	padding: 10px 0 12px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 7px;
+	background-color: #60749d1f;
+	outline: none;
+	color: #677185;
+	font-weight: 600;
+}
+.buttons .apply{
+	width: 88px;
+	padding: 10px 0 12px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 7px;
+	background-color: #5c93ff;
+	color: #fff;
+	outline: none;
+	font-weight: 600;
+}
+.container .box .mainCompleteTaskSection{
+	margin-top: 7px;
+}
+.container .box .mainCompleteTaskSection .completeTaskSection{
+	padding: 14px;
+	border-bottom: 1px solid #e4e5e7;
+	cursor: pointer; 
+}
+.container .box .mainCompleteTaskSection .completeTaskSection .completeTaskList{
+	display: flex;
+	gap: 20px;
+}
+
+.mainCompleteTaskSection .completeTaskSection .taskImage{
+	background-color: #ededed;
+	max-width: 100%;
+	border-radius: 50%;
+	height: 100%;
+	margin-left: 8px;
+	margin-top: 12px;
+	padding: 6px 8px;
+}
+.mainCompleteTaskSection .completeTaskSection .taskCompleteDetail{
+	flex-basis: 87%;
+}
+.mainCompleteTaskSection .completeTaskSection .taskCompleteDetail .taskHeading{
+	display: flex;
+	max-width: 80%;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.mainCompleteTaskSection .completeTaskSection .taskCompleteDetail .taskHeading h3{
+	font-size: 14px;
+}
+.mainCompleteTaskSection .completeTaskSection .taskCompleteDetail .taskHeading p{
+	padding: 4px 8px;
+	margin-top: 5px;
+	border-radius: 20px;
+	font-size: 11px;
+	background-color: #ededed;
+}
+.mainCompleteTaskSection .completeTaskSection .taskCompleteDetail .taskActions{
+	padding-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+.taskActionColumns{
+	position: relative;
+}
+.startDate{
+	font-size: 13px;
+}
+.taskActionColumns:after{
+	content: "";
+	width: 1px;
+	height: 32px;
+	top: 8px;
+	background-color: #0000001f;
+	position: absolute;
+	right: -15px;
+}
+
+.container .box-2{
+	border-radius: 5px;
+	flex-basis: 70%;
+	border: 0.5px #eff0f6;
+	background-color: #fff;
+}
+.classMain{
+	background: #f0f2f5;
+	padding: 9px;
+}
+.classFlex{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 30px;
+	align-items: center;
+}
+.classMain h4{
+	font-size: 14px;
+}
+.actionButtons{
+	display: flex;
+}
+.reject{
+	margin: 0 10px;
+	padding: 8px 21px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: solid 0.5px #e26464;
+	display: flex;
+	gap: 5px;
+}
+
+.reject button{
+	border: none;
+	color: #e26464;
+	background-color: #fff;
+	outline: none;
+}
+
+.accept{
+	margin: 0 10px;
+	padding: 8px 18px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: solid 0.5px #3cc489;
+	display: flex;
+	gap: 5px;
+}
+
+.accept button{
+	border: none;
+	color: #3cc489;
+	background-color: #fff;
+	outline: none;
+}
+.stationListSection{
+	padding: 16px 38px;
+}
+.stationList{
+	border-radius: 5px;
+	border: 0.5px solid #eff0f6;
+	padding-top: 6px;
+}
+.stationList h3{
+	font-size: 13px;
+	padding-left: 14px;
+}
+.listItems ul{
+	display: inline-flex;
+	list-style: none;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 9px;
+	padding-left: 4px;
+	margin-top: -10px;
+}
+.listItems ul li{
+	font-size: 13px;
+	color: #a6acbe;
+	padding-left: 14px;
+}
+.stationListSection .stationList .listItems ul li:nth-child(1):before{
+	color: #6f52ed;
+}
+.stationListSection .stationList .listItems ul li:nth-child(1):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(2):before{
+	color: #ffb800;
+}
+.stationListSection .stationList .listItems ul li:nth-child(2):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(3):before{
+	color: #ff4c61;
+}
+.stationListSection .stationList .listItems ul li:nth-child(3):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(4):before{
+	color: #33d69f;
+}
+.stationListSection .stationList .listItems ul li:nth-child(4):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(5):before{
+	color: #6f52ed;
+}
+.stationListSection .stationList .listItems ul li:nth-child(5):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(6):before{
+	color: #ffb800;
+}
+.stationListSection .stationList .listItems ul li:nth-child(6):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.stationListSection .stationList .listItems ul li:nth-child(7):before{
+	color: #ff4c61;
+}
+.stationListSection .stationList .listItems ul li:nth-child(7):before{
+	content: "\2022";
+    font-size: 31px;
+    padding-right: 8px;
+    position: relative;
+}
+.actionContainerSection{
+	padding: 16px 38px;
+}
+.ActionContainer{
+	display: flex;
+	gap: 15px;
+}
+.fileAttachedSection{
+	border: 0.5px solid #eff0f6;
+	border-radius: 8px;
+	flex-basis: 60%;
+}
+.fileAttachedSection .heading{
+	background-color: #f0f2f5;
+	padding: 5px 15px;
+}
+.heading h4{
+	margin: 4px;
+}
+.fileAttachedSection .uploadedFiles{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 13px;
+}
+.uploadedFiles p{
+	margin: 4px;
+}
+.uploadHistory{
+	padding: 16px 17px 20px;
+	border-radius: 6px;
+	margin: 0px 14px 15px;
+	background-color: #f0f2f5;
+}
+.uploadHistoryDetail{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.uploadHistoryDetailList h4{
+	margin: 4px;
+}
+.uploadHistoryDetailList p{
+	margin: 4px;
+}
+.fileAction{
+	display: flex;
+	gap: 10px;
+	padding-top: 10px;
+}
+.buttons{
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 3px 18px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 40px;
+	box-shadow: 0 2px 6px #0000001f;
+}
+.buttons p{
+	margin: 4px;
+}
+.commentSection{
+	border: 0.5px solid #eff0f6;
+	border-radius: 8px;
+	flex-basis: 40%;
+}
+.commentSection .heading{
+	background-color: #f0f2f5;
+	padding: 5 15px;
+}
+.commentSectionInner{
+	padding: 16px 14px;
+	width: 91%;
+	position: relative;
+}
+.commentTextArea textarea{
+	resize: none;
+	width: 92%;
+	height: 95px;
+	padding: 10px 0 0 15px;
+	border-radius: 11px;
+	border: solid 0.5px #e4e5ea;
+	outline: none;
+}
+.commentPostButton{
+	text-align: right;
+	padding-top: 10px;
+}
+.commentPostButton button{
+	padding: 8px 23.5px;
+	color: #fff;
+	background-color: #5c93ff;
+	border-radius: 5px;
+	border: none;
+	font-weight: 600;
+	margin-right: 6px;
+	cursor: pointer;
+
+}
+.separator{
+	padding-top: 27px;
+}
+.separator hr{
+	border: 0.5px solid #e4e5e7;
+}
+.searchBar{
+	padding-top: 15px;
+}
+.searchBar input{
+	width: 88%;
+	height: 30px;
+	padding-left: 35px;
+	font-size: 13px;
+	border-radius: 5px;
+	border: 0.5px solid #e4e4e4;
+	/*background-image: url(Icon\ ionic-ios-search1.c697f92be3c50efa.png);*/
+}
+.postCommentsWrapper{
+	margin-top: 10px;
+	min-height: 386px;
+	overflow: auto;
+}
+.postCommentsWrapper p{
+	font-style: italic;
+	color: #aaa;
+	font-size: 14px;
+}
+.postCommentSection{
+	padding: 9px;
+	font-style: 13px;
+	border-radius: 2px;
+	border: solid 0.5px #efefef;
+	background-color: #f6f6f6;
+	margin-top: 13px;
+	max-width: 90%;
+	position: relative;
+}
+.postCommentDetail{
+	font-size: 13px;
+}
+.postCommentDetail p{
+	margin: 4px;
+}
